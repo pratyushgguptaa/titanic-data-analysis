@@ -1,5 +1,6 @@
 # titanic-data-analysis
-Here, I have performed some basic data preprocessing techniques such as filling missing values, binning, chi-square test and correlation analysis
+Here, I have performed some basic data preprocessing techniques such as filling missing values, binning, chi-square test and correlation analysis.
+This is part of the DWDM assignment.
 
 <h3>Import all the required libraries and the data from the excel sheet</h3>
 
