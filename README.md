@@ -276,12 +276,12 @@ def removeRows(data):
     for r in nul:
         data_copy = data_copy.drop(r, axis=1)
     # print ratio of removed columns
-    print("Ratio of wrt to original data, when attributes are dropped:", len(data_copy.columns)/len(data.columns))
+    print("Ratio wrt to original data, when attributes are dropped:", len(data_copy.columns)/len(data.columns))
     return data_copy
 removeRows(data)
 ```
 
-    Ratio of wrt to original data, when attributes are dropped: 0.7
+    Ratio wrt to original data, when attributes are dropped: 0.7
     
 
 
@@ -434,12 +434,12 @@ def removeCols(data):
     for r in nul:
         data_copy = data_copy.drop(r, axis=0)
     # print ratio of removed rows
-    print("Ratio of wrt to original data, when rows are dropped:", len(data_copy.index)/len(data.index))
+    print("Ratio wrt to original data, when rows are dropped:", len(data_copy.index)/len(data.index))
     return data_copy
 removeCols(data)
 ```
 
-    Ratio of wrt to original data, when rows are dropped: 0.7967914438502673
+    Ratio wrt to original data, when rows are dropped: 0.7967914438502673
     
 
 
