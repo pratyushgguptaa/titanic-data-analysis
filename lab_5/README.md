@@ -1,3 +1,7 @@
+# titanic-data-analysis
+Here, I have performed some basic data preprocessing techniques such as filling missing values, creating histograms, sampling methods implementation and normalizartion techniques implementation.
+This is part of the DWDM assignment 5.
+
 ### Import all the required libraries and the data from the excel sheet
 
 
