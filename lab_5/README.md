@@ -424,11 +424,20 @@ def randomSampleNoReplace(age):
     return [age[i] for i in sample]
 
 def stratifiedSampling(age):
-    interval = len(age)//3
-    age.sort()
-    sample = randomSampleNoReplace(age[:interval])
-    sample.extend(randomSampleNoReplace(age[interval:2*interval]))
-    sample.extend(randomSampleNoReplace(age[2*interval:]))
+    maxx = max(age)
+    minn = min(age)
+    width = (maxx-minn)/3
+    strata = [[]]*3
+    for i in age:
+        if i <= minn+width:
+            strata[0].append(i)
+        elif i <= minn+2*width:
+            strata[1].append(i)
+        else:
+            strata[2].append(i)            
+    sample = []
+    for i in strata:
+        sample += randomSampleNoReplace(i)
     return sample
 
 replacement = randomSampleReplace(data['age'])
